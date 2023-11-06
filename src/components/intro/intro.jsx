@@ -10,7 +10,9 @@ function Intro() {
     <span className="hello">Hello,</span>
     <span className="introText">I'm <span className="introName">Sujal Jain</span> <br/>Web Designer</span>
     <p className="introPara">I'm a skilled Web Developer with Zero experience in  <br /> creating visual and User friendly designs</p>
-    <Link><button className="btn"><img src={btnImg} alt="" className='imgg' />Hire Me</button></Link>
+    <Link><button className="btn" onClick={()=> {
+          document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+        }}><img src={btnImg} alt="" className='imgg' />Hire Me</button></Link>
     </div> 
     <img src={bg} alt="" className="bg" />
 </section>
