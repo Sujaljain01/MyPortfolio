@@ -9,8 +9,8 @@ function Navbar() {
         <div className="flex flex-shrink-0 items-center">
           <Link
             href="/"
-            className=" text-[#16f2b3] text-3xl font-bold">
-            ABU SAID
+            className=" text-blue-500 text-3xl font-bold">
+            SUJAL JAIN
           </Link>
         </div>
 
@@ -28,9 +28,6 @@ function Navbar() {
           </li>
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div></Link>
-          </li>
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">BLOGS</div></Link>
           </li>
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></Link>

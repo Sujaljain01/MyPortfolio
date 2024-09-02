@@ -1,20 +1,26 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    subject: "Bachelor of Engineering in Computer Science",
+    duration: "2021 - Present",
+    cgpa:" 8.73 CGPA",
+    year:"Bengaluru, Karnataka",
+    title: "Dayananda Sagar College of Engineering",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    subject: "Physics, Chemistry, Mathematics, Computer Science",
+    duration: "2020 - 2021",
+    cgpa:"99.5%",
+    year:"Bengaluru, Karnataka",
+    title: "Narayana PU College",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    subject: "KSEEB",
+    year:"CN Halli, Karnataka",
+    duration: "2009 - 2019",
+    cgpa:"95.84%",
+    title: "Rotary English High School",
   }
 ]
