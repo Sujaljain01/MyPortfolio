@@ -6,9 +6,7 @@
 
 # Demo :movie_camera:
 
-![](./public/image/screen.png)
-
-## View live preview [here](https://abusaid.netlify.app/).
+## View live preview [here](https://vercel.com/sujaljain01s-projects/sujal.me/).
 
 ---
 
@@ -18,28 +16,11 @@
 - [Demo](#demo-movie_camera)
 - [Installation](#installation-arrow_down)
 - [Getting Started](#getting-started-dart)
-- [Usage](#usage-joystick)
 - [Packages Used](#packages-used-package)
 
----
-
-# Sections :bookmark:
-
-- HERO SECTION
-- ABOUT ME
-- EXPERIENCE
-- SKILLS
-- PROJECTS
-- EDUCATION
-- BLOG
-- CONTACTS
-
-
-#### Make sure you have the latest version of both Git and Node on your computer.
 ## <br >
 ```
 
-# Usage :joystick:
 
 Goto [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
 
