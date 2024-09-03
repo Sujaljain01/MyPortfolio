@@ -4,6 +4,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Img } from "@/utils/data/personal-img";
 import Image from "next/image";
+
 const Images = () => {
     return (
         <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
@@ -21,7 +22,7 @@ const Images = () => {
             </div>
 
             <div className="flex justify-center my-5 lg:py-8">
-                <div className="flex  items-center">
+                <div className="flex items-center">
                     <span className="w-24 h-[2px] bg-[#1a1443]"></span>
                     <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
                         Memories
@@ -31,9 +32,19 @@ const Images = () => {
             </div>
             <Box
                 sx={{
-                    width: 900,
-                    height: 400,
-                    overflowY: 'scroll',
+                    width: {
+                        xs: '100%', // Full width on extra small screens
+                        sm: 600,   // Adjust width for small screens
+                        md: 800,   // Adjust width for medium screens
+                        lg: 1000   // Adjust width for large screens
+                    },
+                    height: {
+                        xs: 300,   // Adjust height for extra small screens
+                        sm: 350,   // Adjust height for small screens
+                        md: 400,   // Adjust height for medium screens
+                        lg: 450    // Adjust height for large screens
+                    },
+                    overflowY: 'auto',
                     overflowX: 'hidden', // Hide the horizontal scrollbar
                     scrollbarWidth: 'none', // For Firefox
                     '&::-webkit-scrollbar': {
@@ -42,7 +53,16 @@ const Images = () => {
                     scrollBehavior: 'smooth', // Smooth scrolling
                 }}
             >
-                <ImageList variant="masonry" cols={5} gap={8}>
+                <ImageList 
+                    variant="masonry" 
+                    cols={{
+                        xs: 2,   // 2 columns on extra small screens
+                        sm: 3,   // 3 columns on small screens
+                        md: 4,   // 4 columns on medium screens
+                        lg: 5    // 5 columns on large screens
+                    }} 
+                    gap={8}
+                >
                     {Img.map((item) => (
                         <ImageListItem key={item.img}>
                             <img
