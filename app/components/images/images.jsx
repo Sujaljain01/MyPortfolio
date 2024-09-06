@@ -7,7 +7,6 @@ import { Img } from "@/utils/data/personal-img";
 import useMediaQuery from '@mui/material/useMediaQuery'; 
 import Image from "next/image";
 
- 
 
 const Images = () => {
     
@@ -50,7 +49,7 @@ const isLargeScreen = useMediaQuery('(max-width:1200px)');
 
     <Box
       sx={{
-        width: '100%', // Full width for responsiveness
+        width: '100%',
         maxWidth: 1200, // Limit the max width
         height: 550,
         overflowY: 'scroll',
