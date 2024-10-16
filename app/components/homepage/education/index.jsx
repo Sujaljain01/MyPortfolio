@@ -3,9 +3,16 @@ import Image from "next/image";
 
 import { educations } from "@/utils/data/educations";
 import { BsPersonWorkspace } from "react-icons/bs";
-import AnimationLottie from "../../helper/animation-lottie";
+import dynamic from "next/dynamic";
 import GlowCard from "../../helper/glow-card";
 import lottieFile from '/public/lottie/study.json';
+
+const AnimationLottie = dynamic(() => import('../../helper/animation-lottie'), {
+  ssr: false,
+  loading: function LoadingComponent() { // Use a named function for the fallback component
+    return <div>Loading animation...</div>;
+  },
+});
 
 function Education() {
   return (
@@ -15,6 +22,7 @@ function Education() {
         alt="Hero"
         width={1572}
         height={795}
+        loading="lazy"
         className="absolute top-0 -z-10"
       />
       <div className="flex justify-center -translate-y-[1px]">
@@ -51,6 +59,7 @@ function Education() {
                         src="/blur-23.svg"
                         alt="Hero"
                         width={1080}
+                        layout="intrinsic"
                         height={200}
                         className="absolute bottom-0 opacity-80"
                       />
